@@ -15,7 +15,7 @@ url: "http://nathan.musoke.ca" # the base hostname & protocol for your site
 include: ['_pages']
 
 # Social media accounts for use later
-twitter_username: 
+twitter_username: NathanMusoke
 github_username: musoke
 linkedin_username: NathanMusoke
 ORCID_identifier: 0000-0001-9839-9256
