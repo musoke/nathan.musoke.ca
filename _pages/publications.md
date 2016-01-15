@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Publications
+permalink: /publications/
 ---
 
 I have profiles on the following publication aggregaters:  

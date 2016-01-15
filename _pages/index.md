@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+permalink: /
 ---
 
 ![Nathan Musoke](https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_-_black_simple.svg)
