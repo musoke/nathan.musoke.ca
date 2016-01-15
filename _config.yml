@@ -7,7 +7,7 @@
 
 # Site settings
 title: Nathan Musoke's Personal Website
-email: your-email@domain.com
+email: n.musoke@auckland.ac.nz
 description: > # this means to ignore newlines until "baseurl:"
         Nathan Musoke's Personal Website.
 baseurl: "" # the subpath of your site, e.g. /blog

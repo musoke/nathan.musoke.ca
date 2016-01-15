@@ -13,4 +13,4 @@ Building 303S
 Auckland 1010  
 New Zealand  
 
-[n.musoke@auckland.ac.nz](mailto:n.musoke@auckland.ac.nz)
+[{{ site.email }}](mailto:{{ site.email }})
