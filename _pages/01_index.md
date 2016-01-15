@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-![Nathan Musoke](https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_-_black_simple.svg)
+![Nathan Musoke]({{ site.baseurl }}/assets/public_profile_picture.jpeg)
 
 Department of Physics  
 University of Auckland  
