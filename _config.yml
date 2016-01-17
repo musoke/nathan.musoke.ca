@@ -12,7 +12,9 @@ description: > # this means to ignore newlines until "baseurl:"
         Nathan Musoke's Personal Website.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nathan.musoke.ca" # the base hostname & protocol for your site
+
 include: ['_pages']
+exclude: ['*.sh']
 
 # Social media accounts for use later
 twitter_username: NathanMusoke
