@@ -1,0 +1,39 @@
+arxiv:
+    site: arXiv
+    prepend: http://arxiv.org/a/
+    append: .html
+
+github:
+    site: GitHub
+    prepend: http://github.com/
+    append: 
+
+googlescholar:
+    site: Google Scholar
+    prepend: https://scholar.google.com/citations?user
+    append:
+
+inspirehep:
+    site: INSPIRE-HEP
+    prepend: https://inspirehep.net/author/profile/
+    append:
+
+linkedin:
+        site: LinkedIn
+        prepend: http://linkedin.com/in/
+        append: 
+
+orcid:
+        site: ORCID
+        prepend: http://orcid.org/
+        append:
+
+researcherid:
+    site: ResearcherID
+    prepend: https://www.researcherid.com/rid/
+    append:
+
+scopus:
+    site: Scopus
+    prepend: https://www.scopus.com/inward/authorDetails.url?authorID=
+    append: \&partnerID=MN8TOARS 
