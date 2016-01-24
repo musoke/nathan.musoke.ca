@@ -10,7 +10,7 @@ github:
 
 googlescholar:
     site: Google Scholar
-    prepend: https://scholar.google.com/citations?user
+    prepend: https://scholar.google.com/citations?user=
     append:
 
 inspirehep:
