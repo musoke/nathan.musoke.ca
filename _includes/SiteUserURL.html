@@ -1,0 +1,11 @@
+{% comment %}
+This HTML file is a function which takes the name of a website as input, checks if _data/SiteUserURLs.yml contains information on how that website links to userprofiles, checks if _data/SocialMediaUserIDs contains a username for the site, and then returns the link. 
+{% endcomment %}
+{% if site.data.SiteUserURLs[include.sitename] %}
+    {% if site.data.SocialMediaUserIDs[include.sitename] %}
+        {{ site.data.SiteUserURLs[include.sitename].prepend }}{{ site.data.SocialMediaUserIDs[include.sitename].userid }}{{ site.data.SiteUserURLs[include.sitename].append }}
+    {% else %}
+        {{ site.data.SiteUserURLs[include.sitename].prepend }}{{ site.data.SiteUserURLs[include.sitename].append }}
+    {% endif %}
+{% else %}
+{% endif %}

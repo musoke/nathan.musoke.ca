@@ -2,35 +2,48 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <div class="centeringwrapper" style="text-align:center">
+        <div class="social-media-list">
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+          {% assign sitenames = "github arxiv" | split: ' ' %}
+	  {% for sitename in sitenames %}
+	  {% endfor %}
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
+	  {% if site.data.SocialMediaUserIDs["orcid"].use %}
+		  <a href="{% include SiteUserURL.html sitename="orcid" %}">
+			  <i class="ai ai-orcid"></i>
+		  </a>
           {% endif %}
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
+	  {% if site.data.SocialMediaUserIDs["github"].use %}
+		  <a href="{% include SiteUserURL.html sitename="github" %}">
+			  <i class="fa fa-github"></i>
+		  </a>
           {% endif %}
-        </ul>
-      </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+	  {% if site.data.SocialMediaUserIDs["googlescholar"].use %}
+		  <a href="{% include SiteUserURL.html sitename="googlescholar" %}">
+			  <i class="ai ai-google-scholar"></i>
+		  </a>
+          {% endif %}
+
+	  {% if site.data.SocialMediaUserIDs["linkedin"].use %}
+		  <a href="{% include SiteUserURL.html sitename="linkedin" %}">
+			  <i class="fa fa-linkedin"></i>
+		  </a>
+          {% endif %}
+
+	  {% if site.data.SocialMediaUserIDs["arxiv"].use %}
+		  <a href="{% include SiteUserURL.html sitename="arxiv" %}">
+			  <i class="ai ai-arxiv"></i>
+		  </a>
+          {% endif %}
+
+        </div>
+    </div>
+
+    <div class="footer-acknowledgement">
+      Made with <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://fontawesome.io/">Font Awesome</a> and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
     </div>
 
   </div>
