@@ -109,8 +109,7 @@
 
 .contact-list,
 .social-media-list {
-    list-style: none;
-    margin-left: 0;
+    padding: 10px;
 
     i {
         font-size: 2em
@@ -137,6 +136,11 @@
     color: $grey-color;
     text-align: right;
     font-size: x-small;
+
+    @include media-query($on-palm) {
+      text-align: center;
+      font-size: small;
+    }
 
     a:link {
         color: $grey-color
