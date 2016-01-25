@@ -131,7 +131,24 @@
     a:hover {
         color: $grey-color-dark
     }
+}
 
+.footer-acknowledgement {
+    color: $grey-color;
+    text-align: right;
+    font-size: x-small;
+
+    a:link {
+        color: $grey-color
+    }
+
+    a:visited {
+        color: $grey-color
+    }
+
+    a:hover {
+        color: $grey-color-dark
+    }
 }
 
 .footer-col-wrapper {
