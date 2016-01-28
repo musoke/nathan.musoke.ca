@@ -36,11 +36,20 @@
         color: $text-color;
         line-height: $base-line-height;
 
+	// Padding so that the highlighting of the active element looks good.
+	padding: 10px;
+
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-            margin-right: 20px;
+          //  margin-right: 20px;
         }
     }
+    
+    // Color the background of the page currently being viewed.
+    .active {
+        background: $grey-color-light;
+    }
+
 
     @include media-query($on-palm) {
         position: absolute;
