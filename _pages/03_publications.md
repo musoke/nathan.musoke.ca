@@ -1,12 +1,8 @@
 ---
-layout: default
+layout: page
 title: Publications
 permalink: /publications/
 ---
-
-Publications
-============
-
 
 I have profiles on the following publication aggregaters:  
 
