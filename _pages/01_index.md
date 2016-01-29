@@ -10,6 +10,8 @@ permalink: /
   </div>
 
   <div style="display:inline-block;vertical-align:top;">
+    I am a PhD student and aspiring cosmologist.
+    I am supervised by [Richard Easther](https://www.physics.auckland.ac.nz/people/reas725) at the University of Auckland.
     <div>
       <div> Department of Physics </div> 
       <div> University of Auckland </div> 
