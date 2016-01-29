@@ -314,8 +314,10 @@
     display: inline-block;
     vertical-align: top;
 
+    background-color: $grey-color-light;
     width: 200px;
-    padding: 10px;
+    padding: 5px;
+    margin: 0px 10px 20px;
 }
 
 .home-picture {
