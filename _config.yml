@@ -13,6 +13,12 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nathan.musoke.ca" # the base hostname & protocol for your site
 
+# Contact information for home page.
+physical_address:
+        - Department of Physics
+        - University of Auckland
+        - New Zealand
+
 include: ['_pages']
 exclude: ['*.sh']
 
@@ -27,7 +33,6 @@ arxiv_id: musoke_n_1 # http://arxiv.org/a/musoke_n_1.html
 ResearcherID: A-2604-2016 # ResearcherID: A-2604-2016
 scopus_author_id: 56010561500 # http://www.scopus.com/inward/authorDetails.url?authorID=56010561500&partnerID=MN8TOARS
 academia.edu: https://auckland.academia.edu/NathanMusoke
-
 
 # Build settings
 markdown: kramdown

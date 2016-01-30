@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article class="post">
+
+  <div class="post-content home-content">
+
+    <div class="home-infobox">
+      <img class="home-picture" src="{{ site.baseurl }}/assets/{{ page.image }}">
+      <div class="home-contact">
+        <address>
+          {% for address_line in site.physical_address %}
+            <div>{{ address_line }}</div>
+          {% endfor %}
+	</address>
+        <div> <a href="mailto:{{ site.email }}">{{ site.email }}</a> </div> 
+      </div>
+    </div>
+
+    <div class="home-text">
+      {{ content }}
+    </div>
+  
+  </div>
+
+</article>
