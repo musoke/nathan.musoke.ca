@@ -86,7 +86,7 @@
 
         &:hover .trigger {
             display: block;
-            padding-bottom: 5px;
+            padding-bottom: 0px;
         }
 
         .page-link {
@@ -96,7 +96,7 @@
             &:not(:last-child) {
                 margin-right: 0;
             }
-            margin-left: 20px;
+            margin-left: 0px;
         }
     }
 }
