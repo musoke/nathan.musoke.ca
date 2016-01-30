@@ -9,9 +9,11 @@ layout: default
     <div class="home-infobox">
       <img class="home-picture" src="{{ site.baseurl }}/assets/{{ page.image }}">
       <div class="home-contact">
-        <div> Department of Physics </div> 
-        <div> University of Auckland </div> 
-        <div> New Zealand </div>
+        <address>
+          {% for address_line in site.physical_address %}
+            <div>{{ address_line }}</div>
+          {% endfor %}
+	</address>
         <div> <a href="mailto:{{ site.email }}">{{ site.email }}</a> </div> 
       </div>
     </div>
