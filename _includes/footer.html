@@ -4,41 +4,51 @@
 
     <div class="centeringwrapper" style="text-align:center">
         <div class="social-media-list">
+          <ul>
+            {% assign sitenames = "github arxiv" | split: ' ' %}
+	    {% for sitename in sitenames %}
+	    {% endfor %}
 
-          {% assign sitenames = "github arxiv" | split: ' ' %}
-	  {% for sitename in sitenames %}
-	  {% endfor %}
+	    {% if site.data.SocialMediaUserIDs["orcid"].use %}
+              <li>
+	            <a href="{% include SiteUserURL.html sitename="orcid" %}">
+	          	  <i class="ai ai-orcid"></i>
+	            </a>
+              </li>
+            {% endif %}
 
-	  {% if site.data.SocialMediaUserIDs["orcid"].use %}
-		  <a href="{% include SiteUserURL.html sitename="orcid" %}">
-			  <i class="ai ai-orcid"></i>
-		  </a>
-          {% endif %}
+	    {% if site.data.SocialMediaUserIDs["github"].use %}
+              <li>
+	            <a href="{% include SiteUserURL.html sitename="github" %}">
+	          	  <i class="fa fa-github"></i>
+	            </a>
+              </li>
+            {% endif %}
 
-	  {% if site.data.SocialMediaUserIDs["github"].use %}
-		  <a href="{% include SiteUserURL.html sitename="github" %}">
-			  <i class="fa fa-github"></i>
-		  </a>
-          {% endif %}
+	    {% if site.data.SocialMediaUserIDs["googlescholar"].use %}
+              <li>
+	            <a href="{% include SiteUserURL.html sitename="googlescholar" %}">
+	          	  <i class="ai ai-google-scholar"></i>
+	            </a>
+              </li>
+            {% endif %}
 
-	  {% if site.data.SocialMediaUserIDs["googlescholar"].use %}
-		  <a href="{% include SiteUserURL.html sitename="googlescholar" %}">
-			  <i class="ai ai-google-scholar"></i>
-		  </a>
-          {% endif %}
+	    {% if site.data.SocialMediaUserIDs["linkedin"].use %}
+              <li>
+	            <a href="{% include SiteUserURL.html sitename="linkedin" %}">
+	          	  <i class="fa fa-linkedin"></i>
+	            </a>
+              </li>
+            {% endif %}
 
-	  {% if site.data.SocialMediaUserIDs["linkedin"].use %}
-		  <a href="{% include SiteUserURL.html sitename="linkedin" %}">
-			  <i class="fa fa-linkedin"></i>
-		  </a>
-          {% endif %}
-
-	  {% if site.data.SocialMediaUserIDs["arxiv"].use %}
-		  <a href="{% include SiteUserURL.html sitename="arxiv" %}">
-			  <i class="ai ai-arxiv"></i>
-		  </a>
-          {% endif %}
-
+	    {% if site.data.SocialMediaUserIDs["arxiv"].use %}
+              <li>
+	            <a href="{% include SiteUserURL.html sitename="arxiv" %}">
+	          	  <i class="ai ai-arxiv"></i>
+	            </a>
+              </li>
+            {% endif %}
+	  </ul>
         </div>
     </div>
 
