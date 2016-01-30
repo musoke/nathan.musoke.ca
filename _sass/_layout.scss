@@ -120,6 +120,16 @@
 .social-media-list {
     padding: 10px;
 
+    ul {
+        list-style: none;
+	margin: 0px;
+    }
+
+    li {
+        display: inline-block;
+	padding: 2px;
+    }
+
     i {
         font-size: 2em
     }
