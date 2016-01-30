@@ -37,7 +37,7 @@
         line-height: $base-line-height;
 
 	// Padding so that the highlighting of the active element looks good.
-	padding: 10px;
+	padding: 5px 10px;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
