@@ -1,0 +1,30 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="centeringwrapper" style="text-align:center">
+        <div class="social-media-list">
+          <ul>
+            {% assign sitenames = "orcid arxiv googlescholar github linkedin" | split: ' ' %}
+            {% for sitename in sitenames %}
+              {% for profile in site.data.SocialMediaUserIDs %}
+                {% if profile.sitename == sitename %}
+                  <li>
+                    <a href="{% include SiteUserURL.html sitename=profile.sitename userID=profile.userid %}">
+                       <i class="{% include SiteIcon.html sitename=profile.sitename %}"></i>
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </ul>
+        </div>
+    </div>
+
+    <div class="footer-acknowledgement">
+      Made with <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://fontawesome.io/">Font Awesome</a> and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+    </div>
+
+  </div>
+
+</footer>

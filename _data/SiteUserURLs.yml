@@ -1,0 +1,49 @@
+- sitename: arxiv
+  prepend: http://arxiv.org/a/
+  append: .html
+  icon: ai ai-arxiv
+
+- sitename: github
+  prepend: http://github.com/
+  append: 
+  icon: fa fa-github
+
+- sitename: googlescholar
+  prepend: https://scholar.google.com/citations?user=
+  append:
+  icon: ai ai-google-scholar
+
+- sitename: INSPIRE-HEP
+  prepend: https://inspirehep.net/author/profile/
+  append:
+  icon:
+
+- sitename: linkedin
+  prepend: http://linkedin.com/in/
+  append: 
+  icon: fa fa-linkedin
+
+- sitename: orcid
+  prepend: http://orcid.org/
+  append:
+  icon: ai ai-orcid
+
+- sitename: researcherid
+  prepend: https://www.researcherid.com/rid/
+  append:
+  icon:
+
+- sitename: researchgate
+  prepend: https://www.researchgate.net/profile/
+  append:
+  icon: ai ai-researchgate
+
+- sitename: scopus
+  prepend: https://www.scopus.com/inward/authorDetails.url?authorID=
+  append: \&partnerID=MN8TOARS 
+  icon:
+
+- sitename: universityofauckland
+  prepend: https://unidirectory.auckland.ac.nz/profile/
+  append: 
+  icon:
