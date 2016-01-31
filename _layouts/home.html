@@ -7,7 +7,7 @@ layout: default
   <div class="post-content home-content">
 
     <div class="home-infobox">
-      <img class="home-picture" src="{{ site.baseurl }}/assets/{{ page.image }}">
+      <img class="home-picture" src="{{ page.image | prepend: "/assets/" | prepend: site.baseurl | prepend: site.url }}">
       <div class="home-contact">
         <address>
           {% for address_line in site.physical_address %}

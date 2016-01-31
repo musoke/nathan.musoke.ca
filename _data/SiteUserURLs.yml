@@ -1,39 +1,49 @@
-arxiv:
-    site: arXiv
-    prepend: http://arxiv.org/a/
-    append: .html
+- sitename: arxiv
+  prepend: http://arxiv.org/a/
+  append: .html
+  icon: ai ai-arxiv
 
-github:
-    site: GitHub
-    prepend: http://github.com/
-    append: 
+- sitename: github
+  prepend: http://github.com/
+  append: 
+  icon: fa fa-github
 
-googlescholar:
-    site: Google Scholar
-    prepend: https://scholar.google.com/citations?user=
-    append:
+- sitename: googlescholar
+  prepend: https://scholar.google.com/citations?user=
+  append:
+  icon: ai ai-google-scholar
 
-inspirehep:
-    site: INSPIRE-HEP
-    prepend: https://inspirehep.net/author/profile/
-    append:
+- sitename: INSPIRE-HEP
+  prepend: https://inspirehep.net/author/profile/
+  append:
+  icon:
 
-linkedin:
-        site: LinkedIn
-        prepend: http://linkedin.com/in/
-        append: 
+- sitename: linkedin
+  prepend: http://linkedin.com/in/
+  append: 
+  icon: fa fa-linkedin
 
-orcid:
-        site: ORCID
-        prepend: http://orcid.org/
-        append:
+- sitename: orcid
+  prepend: http://orcid.org/
+  append:
+  icon: ai ai-orcid
 
-researcherid:
-    site: ResearcherID
-    prepend: https://www.researcherid.com/rid/
-    append:
+- sitename: researcherid
+  prepend: https://www.researcherid.com/rid/
+  append:
+  icon:
 
-scopus:
-    site: Scopus
-    prepend: https://www.scopus.com/inward/authorDetails.url?authorID=
-    append: \&partnerID=MN8TOARS 
+- sitename: researchgate
+  prepend: https://www.researchgate.net/profile/
+  append:
+  icon: ai ai-researchgate
+
+- sitename: scopus
+  prepend: https://www.scopus.com/inward/authorDetails.url?authorID=
+  append: \&partnerID=MN8TOARS 
+  icon:
+
+- sitename: universityofauckland
+  prepend: https://unidirectory.auckland.ac.nz/profile/
+  append: 
+  icon:

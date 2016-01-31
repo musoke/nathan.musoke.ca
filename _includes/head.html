@@ -3,15 +3,70 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title> {% if page.title %}{{ page.title }} | {{ site.title }} {% else %}{{ site.title }}{% endif %} </title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% capture title %}{% if page.title %}{{ page.title }} | {{ site.title }} {% else %}{{ site.title }}{% endif %} {% endcapture %}
+  {% capture description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+  {% capture canonicalurl %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+  {% if page.image %}
+    {% capture canonicalimageurl %}
+      {{ page.image | prepend: "/assets/" | prepend: site.baseurl | prepend: site.url }}
+    {% endcapture %}
+  {% endif %}
+
+  <title> {{ title }} </title>
+  <meta name="description" content="">
   <meta name="robots" content="index, follow, noarchive, nocache">
+
+  {% comment %}
+  This is Schema.org microdata.
+  {% endcomment %}
+  <meta itemprop="name" content="{{ title }}">
+  <meta itemprop="description" content="{{ description }}">
+  <meta itemprop="image" content="{{ canonicalimageurl }}">
+
+  <meta itemprop="about">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "about",
+        "Person": {
+          "@type": "Person",
+          "name": "Nathan Musoke",
+          "familyName": "Musoke",
+          "givenName": "Nathan",
+	  "url": "{{ site.baseurl | prepend: site.url }}",
+          "sameAs": [
+            {% for profile in site.data.SocialMediaUserIDs %}
+              {% if profile.use %}
+		"{% include SiteUserURL.html sitename=profile.sitename userID=profile.userid %}",
+              {% endif %}
+            {% endfor %}
+            ""
+          ],
+          "address": "{% for address_line in site.physical_address %}{{ address_line }}, {% endfor %}",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Univeristy of Auckland",
+            "url": "https://www.auckland.ac.nz"
+          }
+        }
+    }
+    </script>
+
+
+  {% comment %}
+  This is Open Graph Protocol metadata.
+  {% endcomment %}
+  <meta property="og:title" content="{{ title }}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="{{ description }}"/>
+  <meta property="og:image" content="{{ canonicalimageurl }}"/>
+  <meta property="og:url" content="{{ canonicalurl }}"/> 
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ "/css/academicons.css" | prepend: site.baseurl }}"/>
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ canonicalurl }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
   {% include google_analytics.html %}

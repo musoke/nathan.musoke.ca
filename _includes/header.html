@@ -13,11 +13,11 @@
         </svg>
       </a>
 
-      <div class="trigger">
+      <div class="trigger" itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
         {% for my_page in site.pages %}
           {% if my_page.title %}
 	    {% if my_page.url != "/404.html" %}
-	    <a class="page-link {% if my_page.title == page.title %} active {% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+	    <a class="page-link {% if my_page.title == page.title %} active {% endif %}" href="{{ my_page.url | prepend: site.baseurl }}" itemprop="itemListElement" >{{ my_page.title }}</a>
 	    {% endif %}
           {% endif %}
         {% endfor %}
