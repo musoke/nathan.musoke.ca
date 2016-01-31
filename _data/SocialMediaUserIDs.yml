@@ -37,3 +37,7 @@
 - sitename: twitter_username
   userid: NathanMusoke
   use: false
+
+- sitename: universityofauckland
+  userid: n-musoke
+  use: true
