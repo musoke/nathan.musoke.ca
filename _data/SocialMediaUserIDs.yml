@@ -1,29 +1,39 @@
-academia.edu: https://auckland.academia.edu/NathanMusoke
+- sitename: academia
+  userid: NathanMusoke
+  use: false
+ 
+- sitename: arxiv
+  userid: musoke_n_1
+  use: true
 
-arxiv:
-        userid: musoke_n_1 # http://arxiv.org/a/musoke_n_1.html
-        use: true
+- sitename: github
+  userid: NathanMusoke
+  use: true
 
-github:
-        userid: NathanMusoke
-        use: true
+- sitename: googlescholar
+  userid: ll4tDj4AAAAJ
+  use: true
 
-googlescholar:
-        userid: ll4tDj4AAAAJ
-        use: true
+- sitename: linkedin
+  userid: NathanMusoke
+  use: true
 
-linkedin:
-        userid: NathanMusoke
-        use: true
+- sitename: orcid
+  userid: 0000-0001-9839-9256
+  use: true
 
-orcid:
-        userid: 0000-0001-9839-9256
-        use: true
+- sitename: INSPIRE_BAI
+  userid: N.Musoke.1 
+  use: false
 
-INSPIRE_BAI: N.Musoke.1 
+- sitename: ResearcherID
+  userid: A-2604-2016
+  use: false
 
-ResearcherID: A-2604-2016 # ResearcherID: A-2604-2016
-scopus_author_id: 56010561500 # http://www.scopus.com/inward/authorDetails.url?authorID=56010561500&partnerID=MN8TOARS
-twitter_username: NathanMusoke
+- sitename: scopus_author_id
+  userid: 56010561500
+  use: false
 
-
+- sitename: twitter_username
+  userid: NathanMusoke
+  use: false
