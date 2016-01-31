@@ -1,0 +1,47 @@
+- sitename: academia
+  userid: NathanMusoke
+  use: false
+ 
+- sitename: arxiv
+  userid: musoke_n_1
+  use: true
+
+- sitename: github
+  userid: NathanMusoke
+  use: true
+
+- sitename: googlescholar
+  userid: ll4tDj4AAAAJ
+  use: true
+
+- sitename: linkedin
+  userid: NathanMusoke
+  use: true
+
+- sitename: orcid
+  userid: 0000-0001-9839-9256
+  use: true
+
+- sitename: INSPIRE-HEP
+  userid: N.Musoke.1 
+  use: true
+
+- sitename: researchgate
+  userid: Nathan_Musoke
+  use: true
+
+- sitename: ResearcherID
+  userid: A-2604-2016
+  use: false
+
+- sitename: scopus_author_id
+  userid: 56010561500
+  use: false
+
+- sitename: twitter_username
+  userid: NathanMusoke
+  use: false
+
+- sitename: universityofauckland
+  userid: n-musoke
+  use: true

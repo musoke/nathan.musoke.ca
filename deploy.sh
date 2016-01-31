@@ -8,4 +8,4 @@ set -e
 jekyll build
 
 # Upload to AWS S3 bucket.
-aws s3 cp --recursive ./_site/ s3://nathan.musoke.ca/_site/
+aws s3 cp --recursive ./_site/ s3://nathan.musoke.ca/

@@ -2,35 +2,27 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <div class="centeringwrapper" style="text-align:center">
+        <div class="social-media-list">
+          <ul>
+            {% assign sitenames = "orcid arxiv googlescholar github linkedin" | split: ' ' %}
+            {% for sitename in sitenames %}
+              {% for profile in site.data.SocialMediaUserIDs %}
+                {% if profile.sitename == sitename %}
+                  <li>
+                    <a href="{% include SiteUserURL.html sitename=profile.sitename userID=profile.userid %}">
+                       <i class="{% include SiteIcon.html sitename=profile.sitename %}"></i>
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </ul>
+        </div>
+    </div>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+    <div class="footer-acknowledgement">
+      Made with <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://fontawesome.io/">Font Awesome</a> and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
     </div>
 
   </div>

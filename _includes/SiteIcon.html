@@ -1,0 +1,7 @@
+{% for profilesite in site.data.SiteUserURLs %}
+    {% if profilesite.sitename == include.sitename %}
+        {{ profilesite.icon }}
+	{% break %}
+    {% else %}
+    {% endif %}
+{% endfor %}

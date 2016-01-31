@@ -36,11 +36,20 @@
         color: $text-color;
         line-height: $base-line-height;
 
+	// Padding so that the highlighting of the active element looks good.
+	padding: 5px 10px;
+
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-            margin-right: 20px;
+          //  margin-right: 20px;
         }
     }
+    
+    // Color the background of the page currently being viewed.
+    .active {
+        background: $grey-color-light;
+    }
+
 
     @include media-query($on-palm) {
         position: absolute;
@@ -77,7 +86,7 @@
 
         &:hover .trigger {
             display: block;
-            padding-bottom: 5px;
+            padding-bottom: 0px;
         }
 
         .page-link {
@@ -87,7 +96,7 @@
             &:not(:last-child) {
                 margin-right: 0;
             }
-            margin-left: 20px;
+            margin-left: 0px;
         }
     }
 }
@@ -109,8 +118,60 @@
 
 .contact-list,
 .social-media-list {
-    list-style: none;
-    margin-left: 0;
+    padding: 10px;
+
+    ul {
+        list-style: none;
+	margin: 0px;
+    }
+
+    li {
+        display: inline-block;
+	padding: 2px;
+    }
+
+    i {
+        font-size: 2em
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: $grey-color
+    }
+
+    a:visited {
+        color: $grey-color
+    }
+
+    a:hover {
+        color: $grey-color-dark
+    }
+}
+
+.footer-acknowledgement {
+    color: $grey-color;
+    text-align: right;
+    font-size: x-small;
+
+    @include media-query($on-palm) {
+      text-align: center;
+      font-size: small;
+    }
+
+    a:link {
+        color: $grey-color
+    }
+
+    a:visited {
+        color: $grey-color
+    }
+
+    a:hover {
+        color: $grey-color-dark
+    }
 }
 
 .footer-col-wrapper {
@@ -238,5 +299,55 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+
+
+
+/**
+ * For Homepage
+ */
+.home-content{
+    display: -webkit-flex; /* Safari */
+    display: flex;  
+
+    @include media-query($on-palm) {
+        -webkit-flex-direction: column; /* Safari 6.1+ */
+        flex-direction: column;
+        -webkit-align-items: center; /* Safari 7.0+ */
+        align-items: center;
+    }
+}
+
+.home-infobox {
+    display: inline-block;
+    vertical-align: top;
+
+    background-color: $grey-color-light;
+    width: 200px;
+    padding: 5px;
+    margin: 0px 10px 20px;
+}
+
+.home-picture {
+    
+}
+
+.home-contact {
+    font-size: small;
+    font-weight: bold;
+
+    address {
+        font-style: normal;
+    }
+}
+
+.home-text {
+    display: inline-block;
+    vertical-align: top;
+    
+    @include media-query($on-palm) {
+        max-width: 400px;
     }
 }
