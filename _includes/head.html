@@ -22,9 +22,35 @@
   <meta itemprop="name" content="{{ title }}">
   <meta itemprop="description" content="{{ description }}">
   <meta itemprop="image" content="{{ canonicalimageurl }}">
-  <meta itemprop="sameAs" content="{% if site.data.SocialMediaUserIDs["orcid"].use %}{% include SiteUserURL.html sitename="linkedin" %}{% endif %}">
-  <meta itemprop="sameAs" content="{% if site.data.SocialMediaUserIDs["linkedin"].use %}{% include SiteUserURL.html sitename="linkedin" %}{% endif %}">
 
+  <meta itemprop="about">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "about",
+        "Person": {
+          "@type": "Person",
+          "name": "Nathan Musoke",
+          "familyName": "Musoke",
+          "givenName": "Nathan",
+	  "url": "{{ site.baseurl | prepend: site.url }}",
+          "sameAs": [
+            {% for profile in site.data.SocialMediaUserIDs %}
+              {% if profile.use %}
+		"{% include SiteUserURL.html sitename=profile.sitename userID=profile.userid %}",
+              {% endif %}
+            {% endfor %}
+            ""
+          ],
+          "address": "{% for address_line in site.physical_address %}{{ address_line }}, {% endfor %}",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Univeristy of Auckland",
+            "url": "https://www.auckland.ac.nz"
+          }
+        }
+    }
+    </script>
 
 
   {% comment %}
