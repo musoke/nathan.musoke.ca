@@ -22,17 +22,5 @@ physical_address:
 include: ['_pages']
 exclude: ['*.sh']
 
-# Social media accounts for use later
-twitter_username: NathanMusoke
-github_username: NathanMusoke
-linkedin_username: NathanMusoke
-ORCID_identifier: 0000-0001-9839-9256
-google_scholar_user: ll4tDj4AAAAJ
-INSPIRE_BAI: N.Musoke.1 
-arxiv_id: musoke_n_1 # http://arxiv.org/a/musoke_n_1.html
-ResearcherID: A-2604-2016 # ResearcherID: A-2604-2016
-scopus_author_id: 56010561500 # http://www.scopus.com/inward/authorDetails.url?authorID=56010561500&partnerID=MN8TOARS
-academia.edu: https://auckland.academia.edu/NathanMusoke
-
 # Build settings
 markdown: kramdown
