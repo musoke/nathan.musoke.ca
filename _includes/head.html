@@ -1,4 +1,4 @@
-<head>
+<head itemscope intemtype="http://schema.org/Webpage">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +15,17 @@
   <title> {{ title }} </title>
   <meta name="description" content="">
   <meta name="robots" content="index, follow, noarchive, nocache">
+
+  {% comment %}
+  This is Schema.org microdata.
+  {% endcomment %}
+  <meta itemprop="name" content="{{ title }}">
+  <meta itemprop="description" content="{{ description }}">
+  <meta itemprop="image" content="{{ canonicalimageurl }}">
+  <meta itemprop="sameAs" content="{% if site.data.SocialMediaUserIDs["orcid"].use %}{% include SiteUserURL.html sitename="linkedin" %}{% endif %}">
+  <meta itemprop="sameAs" content="{% if site.data.SocialMediaUserIDs["linkedin"].use %}{% include SiteUserURL.html sitename="linkedin" %}{% endif %}">
+
+
 
   {% comment %}
   This is Open Graph Protocol metadata.
