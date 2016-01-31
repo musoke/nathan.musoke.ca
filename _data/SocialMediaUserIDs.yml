@@ -24,7 +24,11 @@
 
 - sitename: INSPIRE_BAI
   userid: N.Musoke.1 
-  use: false
+  use: true
+
+- sitename: researchgate
+  userid: Nathan_Musoke
+  use: true
 
 - sitename: ResearcherID
   userid: A-2604-2016

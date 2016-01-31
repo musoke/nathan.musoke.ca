@@ -33,6 +33,11 @@
   append:
   icon:
 
+- sitename: researchgate
+  prepend: https://www.researchgate.net/profile/
+  append:
+  icon: ai ai-researchgate
+
 - sitename: scopus
   prepend: https://www.scopus.com/inward/authorDetails.url?authorID=
   append: \&partnerID=MN8TOARS 
