@@ -8,4 +8,5 @@ set -e
 jekyll build
 
 # Upload to AWS S3 bucket.
-aws s3 cp --recursive ./_site/ s3://nathan.musoke.ca/
+aws s3 sync ./_site/ s3://nathan.musoke.ca/ --delete --cache-control="max-age=86400" --exclude "*.html"
+aws s3 sync ./_site/ s3://nathan.musoke.ca/ --delete --cache-control="max-age=0, no-cache" --exclude "*" --include "*.html"
