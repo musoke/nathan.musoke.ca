@@ -20,7 +20,10 @@ physical_address:
         - New Zealand
 
 include: ['_pages']
-exclude: ['*.sh']
+exclude: ['*.sh','Gemfile*']
 
 # Build settings
 markdown: kramdown
+
+gems:
+    - jekyll-sitemap
