@@ -1,0 +1,4 @@
+# _config_dev.yml
+# This file is used for development, so that links to the site.url are directed to localhost.
+url: http://localhost:4000
+baseurl: ""
