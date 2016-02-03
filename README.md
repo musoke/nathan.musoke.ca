@@ -1,1 +1,4 @@
-Jekyll files for for Nathan Musoke's website.
+Nathan Musoke's website
+=================
+
+This repository contains Jekyll files for Nathan Musoke's personal website.
