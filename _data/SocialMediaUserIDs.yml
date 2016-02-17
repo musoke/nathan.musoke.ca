@@ -38,9 +38,9 @@
   userid: 56010561500
   use: false
 
-- sitename: twitter_username
+- sitename: twitter
   userid: NathanMusoke
-  use: false
+  use: true
 
 - sitename: universityofauckland
   userid: n-musoke
