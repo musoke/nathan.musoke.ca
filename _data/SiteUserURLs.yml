@@ -47,3 +47,13 @@
   prepend: https://unidirectory.auckland.ac.nz/profile/
   append: 
   icon:
+
+- sitename: twitter
+  prepend: https://twitter.com/
+  append:
+  icon: fa fa-twitter
+
+- sitename: about.me
+  prepend: https://about.me/
+  append:
+  icon:
