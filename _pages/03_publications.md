@@ -11,7 +11,7 @@ I have profiles on the following publication aggregaters:
 * [ORCID](https://orcid.org/{{ site.ORCID_identifier }})  
 
 
-Below is a list of recent my publications as compiled by [INSPIRE-HEP](https://inspirehep.net/), the high energy physics information system.
+Below is a list of my publications as compiled by [INSPIRE-HEP](https://inspirehep.net/), the high energy physics information system.
 
 --------------------------------------
 
