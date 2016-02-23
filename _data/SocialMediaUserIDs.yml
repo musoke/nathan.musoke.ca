@@ -1,3 +1,7 @@
+- sitename: about.me
+  userid: nathanmusoke
+  use: true
+
 - sitename: academia
   userid: NathanMusoke
   use: false
@@ -38,9 +42,9 @@
   userid: 56010561500
   use: false
 
-- sitename: twitter_username
+- sitename: twitter
   userid: NathanMusoke
-  use: false
+  use: true
 
 - sitename: universityofauckland
   userid: n-musoke
