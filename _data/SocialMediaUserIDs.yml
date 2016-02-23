@@ -1,3 +1,7 @@
+- sitename: about.me
+  userid: nathanmusoke
+  use: true
+
 - sitename: academia
   userid: NathanMusoke
   use: false
