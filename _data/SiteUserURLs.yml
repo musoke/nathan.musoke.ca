@@ -23,6 +23,11 @@
   append:
   icon:
 
+- sitename: keybase
+  prepend: https://keybase.io/
+  append:
+  icon:
+
 - sitename: linkedin
   prepend: http://linkedin.com/in/
   append: 
