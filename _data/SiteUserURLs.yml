@@ -8,6 +8,11 @@
   append: 
   icon: fa fa-github
 
+- sitename: gitlab
+  prepend: https://gitlab.com/u/
+  append:
+  icon:
+
 - sitename: googlescholar
   prepend: https://scholar.google.com/citations?user=
   append:
@@ -28,6 +33,11 @@
   append:
   icon: ai ai-orcid
 
+- sitename: publons
+  prepend: https://publons.com/author/
+  append: 
+  icon:
+
 - sitename: researcherid
   prepend: https://www.researcherid.com/rid/
   append:
@@ -42,6 +52,11 @@
   prepend: https://www.scopus.com/inward/authorDetails.url?authorID=
   append: \&partnerID=MN8TOARS 
   icon:
+
+- sitename: stackexchange
+  prepend: http://stackexchange.com/users/
+  append: 
+  icon: 
 
 - sitename: universityofauckland
   prepend: https://unidirectory.auckland.ac.nz/profile/
