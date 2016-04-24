@@ -14,8 +14,16 @@
   userid: NathanMusoke
   use: true
 
+- sitename: gitlab
+  userid: nathanmusoke
+  use: true
+
 - sitename: googlescholar
   userid: ll4tDj4AAAAJ
+  use: true
+
+- sitename: keybase
+  userid: nathanmusoke
   use: true
 
 - sitename: linkedin
@@ -24,6 +32,10 @@
 
 - sitename: orcid
   userid: 0000-0001-9839-9256
+  use: true
+
+- sitename: publons
+  userid: 688003
   use: true
 
 - sitename: INSPIRE-HEP
@@ -41,6 +53,10 @@
 - sitename: scopus_author_id
   userid: 56010561500
   use: false
+
+- sitename: stackexchange
+  userid: 6253317
+  use: true
 
 - sitename: twitter
   userid: NathanMusoke

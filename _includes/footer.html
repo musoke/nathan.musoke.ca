@@ -10,7 +10,7 @@
               {% for profile in site.data.SocialMediaUserIDs %}
                 {% if profile.sitename == sitename %}
                   <li>
-                    <a href="{% include SiteUserURL.html sitename=profile.sitename userID=profile.userid %}">
+                    <a href="{% include SiteUserURL.html sitename=profile.sitename userID=profile.userid %}" rel="me">
                        <i class="{% include SiteIcon.html sitename=profile.sitename %}"></i>
                     </a>
                   </li>

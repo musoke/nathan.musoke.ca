@@ -8,6 +8,11 @@
   append: 
   icon: fa fa-github
 
+- sitename: gitlab
+  prepend: https://gitlab.com/u/
+  append:
+  icon:
+
 - sitename: googlescholar
   prepend: https://scholar.google.com/citations?user=
   append:
@@ -15,6 +20,11 @@
 
 - sitename: INSPIRE-HEP
   prepend: https://inspirehep.net/author/profile/
+  append:
+  icon:
+
+- sitename: keybase
+  prepend: https://keybase.io/
   append:
   icon:
 
@@ -27,6 +37,11 @@
   prepend: http://orcid.org/
   append:
   icon: ai ai-orcid
+
+- sitename: publons
+  prepend: https://publons.com/author/
+  append: 
+  icon:
 
 - sitename: researcherid
   prepend: https://www.researcherid.com/rid/
@@ -42,6 +57,11 @@
   prepend: https://www.scopus.com/inward/authorDetails.url?authorID=
   append: \&partnerID=MN8TOARS 
   icon:
+
+- sitename: stackexchange
+  prepend: http://stackexchange.com/users/
+  append: 
+  icon: 
 
 - sitename: universityofauckland
   prepend: https://unidirectory.auckland.ac.nz/profile/
