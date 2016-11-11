@@ -11,7 +11,7 @@
   use: true
 
 - sitename: github
-  userid: NathanMusoke
+  userid: musoke
   use: true
 
 - sitename: gitlab
