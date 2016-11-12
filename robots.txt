@@ -1,2 +1,5 @@
 User-agent: *
 Disallow: /cv/
+
+User-Agent: ia_archiver
+Disallow: /
