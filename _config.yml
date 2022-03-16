@@ -7,17 +7,16 @@
 
 # Site settings
 title: Nathan Musoke
-email: n.musoke@auckland.ac.nz
+email: nathan.musoke@unh.edu
 description: > # this means to ignore newlines until "baseurl:"
-        Nathan Musoke's Personal Website.
+        Nathan Musoke's Website.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nathan.musoke.ca" # the base hostname & protocol for your site
 
 # Contact information for home page.
 physical_address:
-        - Department of Physics
-        - University of Auckland
-        - New Zealand
+        - Department of Physics & Astronomy
+        - University of New Hampshire
 
 include: ['_pages']
 exclude: ['*.sh','Gemfile*']
