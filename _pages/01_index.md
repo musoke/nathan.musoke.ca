@@ -5,7 +5,7 @@ permalink: /
 image: public_profile_picture.jpeg
 ---
 
-I am a computational cosmologist, currently a postdoc in [Chanda Prescod-Weinstein](https://physics.unh.edu/people/faculty/chanda-prescod-weinstein)'s group at the University of New Hampshire.
+I am a computational cosmologist, currently a postdoc in [Chanda Prescod-Weinstein](https://ceps.unh.edu/person/chanda-prescod-weinstein)'s group at the University of New Hampshire.
 My current research interests include fuzzy dark matter and [non-linear dynamics in the very early universe](https://doi.org/10.1103/PhysRevLett.124.061301).
 
 
