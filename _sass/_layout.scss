@@ -325,9 +325,13 @@
     vertical-align: top;
 
     background-color: $grey-color-light;
-    width: 200px;
+    width: 900px;
     padding: 5px;
     margin: 0px 10px 20px;
+
+    @include media-query($on-palm) {
+        max-width: 200px;
+    }
 }
 
 .home-picture {
